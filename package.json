@@ -1,0 +1,21 @@
+{
+  "name": "consulting-report-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "public",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w public\" \"npm run dev -w server\"",
+    "build": "npm run build -w public && npm run build -w server",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "concurrently": "^9.2.1",
+    "globals": "^15.14.0",
+    "tsx": "^4.19.2"
+  }
+}

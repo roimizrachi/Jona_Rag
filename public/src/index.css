@@ -1,0 +1,17 @@
+h2 {
+  font-family: Poppins !important;
+}
+
+* {
+  font-family: figtree !important;
+}
+
+.guiding-question {
+  cursor: pointer;
+  transition: text-decoration 0.2s ease;
+}
+
+.guiding-question:hover {
+  text-decoration: underline;
+  color: var(--mantine-color-yellow-4);
+}
