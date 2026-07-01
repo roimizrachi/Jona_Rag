@@ -6,7 +6,6 @@ export const loadData = async (_: Request, res: Response): Promise<void> => {
     await loadAllData();
     res.status(200).json({ ok: true });
   } catch (error) {
-    console.error('POST /api/load_data failed:', error);
     res.status(500).json({
       answer: '',
       error: 'Failed to load data',

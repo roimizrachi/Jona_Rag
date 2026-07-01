@@ -1,5 +1,5 @@
 import { answerQuestion } from './answerService';
-import { loadFirstPdf } from './dataLoader';
+import { loadAllDataSources } from './dataLoader';
 
-export const loadAllData = loadFirstPdf;
+export const loadAllData = loadAllDataSources;
 export const ask = answerQuestion;
